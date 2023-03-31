@@ -1,0 +1,5 @@
+Files were created using: 
+
+samtools mpileup -f [Homo_sapiens.GRCh37.fa] -E -q 20 -Q 20 --ff 3844 [BAM file] | cut -f1,2,4 | bgzip -c > DP.tsv.gz
+
+Scripts/compute_overall_dp.py -b WES_targets/SureSelectHumanAllExonV7.b37.Target.bed -d DP.tsv.gz -c auto -o [name].overal_stats.txt

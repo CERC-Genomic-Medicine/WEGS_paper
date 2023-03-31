@@ -1,0 +1,3 @@
+Files were created using: 
+
+Scripts/compute_overall_stats.py -s [BAM file] -F 512 -q 20 -c auto -o [name].overall_stats.txt
