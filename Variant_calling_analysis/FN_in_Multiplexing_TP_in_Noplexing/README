@@ -1,0 +1,5 @@
+These files were generated with:
+
+Scripts/compare_false_negatives.py -v1 [multiplexed sample].happy_benchmark.vcf.gz -d1 [multiplexed sample].DP.tsv.gz -v2 [noplexed sample 1].happy_benchmark.vcf.gz [noplexed sample 2].happy_benchmark.vcf.gz [noplexed sample 3].happy_benchmark.vcf.gz -d2 [noplexed sample 1].DP.tsv.gz [noplexed sample 2].tsv.gz [noplexed sample 3].DP.tsv.gz -o [multiplexed sample].tsv
+
+*.DP.tsv.gz files were generated from BAM files after running GATK in the debug mode in regions around FN variant calls. In this way, we get DP after local re-alignment performed by GATK during the variant calling.
